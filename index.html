@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Aura AR - AI Hand Tracking</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- MediaPipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ================= START SCREEN ================= -->
+
+    <div id="startOverlay">
+        <h1 class="title"> NEON AURA AR </h1>
+
+        <p class="subtitle">
+            AI Hand Tracking Experience
+            <br>
+            Allow Camera Permission and Click Start
+        </p>
+
+        <button id="startBtn" class="start-btn">
+            ENTER EXPERIENCE
+        </button>
+    </div>
+
+    <!-- ================= CAMERA ================= -->
+
+    <div class="video-container">
+
+        <video
+            class="input_video"
+            autoplay
+            playsinline
+            muted>
+        </video>
+
+        <canvas id="bgCanvas"></canvas>
+
+        <canvas id="mainCanvas"></canvas>
+
+    </div>
+
+    <!-- ================= HUD ================= -->
+
+    <div id="hud" class="hidden">
+
+        <div class="panel">
+
+            <div class="stat">
+                🖐 Hands :
+                <span class="val" id="ui-hands">0</span>
+            </div>
+
+            <div class="stat">
+                ⚡ FPS :
+                <span class="val" id="ui-fps">0</span>
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <div class="stat">
+                🎯 Gesture :
+                <span class="val" id="ui-gesture">NONE</span>
+            </div>
+
+            <div class="stat">
+                📏 Spread :
+                <span class="val" id="ui-spread">0%</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= THEMES ================= -->
+
+    <div id="themes" class="hidden">
+
+        <button class="theme-btn active" data-theme="Rainbow">
+            🌈 Rainbow
+        </button>
+
+        <button class="theme-btn" data-theme="Cyberpunk">
+            💜 Cyberpunk
+        </button>
+
+        <button class="theme-btn" data-theme="Lava">
+            🔥 Lava
+        </button>
+
+        <button class="theme-btn" data-theme="Ocean">
+            🌊 Ocean
+        </button>
+
+        <button class="theme-btn" data-theme="Galaxy">
+            🌌 Galaxy
+        </button>
+
+    </div>
+
+    <!-- ================= MAIN ================= -->
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
