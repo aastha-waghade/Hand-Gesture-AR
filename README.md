@@ -2,13 +2,9 @@
 
 A futuristic AI-powered hand tracking web application built using **MediaPipe Hands**, **HTML5**, **CSS3**, and **JavaScript**. The application uses your webcam to detect real-time hand gestures and creates immersive visual effects with interactive sound effects.
 
----
-
 ## 📸 Overview
 
 Neon Aura AR transforms your webcam into an interactive augmented reality experience where hand gestures trigger stunning particle animations, neon effects, and dynamic sounds.
-
----
 
 ## 🚀 Features
 
