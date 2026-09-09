@@ -194,7 +194,6 @@ This project is licensed under the **MIT License**.
 
 You are free to use, modify, and distribute this project with proper attribution.
 
----
 
 ## ⭐ Support
 
@@ -202,7 +201,7 @@ If you found this project helpful, please consider giving it a ⭐ on GitHub.
 
 Your support is greatly appreciated!
 
----
+
 
 # Thank You ❤️
 
